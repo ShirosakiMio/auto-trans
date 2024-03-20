@@ -19,8 +19,7 @@ jobs:
 
       - name: Build
         run: |
-          chmod +x ./build.sh
-          ./build.sh
+          mvn package
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v3
