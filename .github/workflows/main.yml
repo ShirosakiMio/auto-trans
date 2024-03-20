@@ -11,9 +11,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Grant Execute Permission for gradlew
-        run: chmod +x gradlew
-
       - name: Setup Java
         uses: actions/setup-java@v3
         with:
